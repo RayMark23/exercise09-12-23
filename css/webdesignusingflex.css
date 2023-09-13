@@ -1,0 +1,169 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  background-image: url("https://st3.depositphotos.com/11351832/34485/v/450/depositphotos_344856368-stock-illustration-circuit-board-technology-background.jpg");
+  background-size: cover;
+  /* background-repeat: repeat; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+header {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20px;
+  max-width: auto;
+  margin: auto;
+  background-color: #060725d3;
+}
+
+header h1 {
+  color: #40f5ffcb;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #3498db;
+}
+
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+  padding-top: 100px;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%; /* new */
+}
+
+.column h2 {
+  font-size: 48px;
+  margin: 0 0 10px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.column p {
+  font-size: 24px;
+  margin: 0 0 20px;
+  line-height: 1.8; /* adjusted */
+}
+
+.cta-button {
+  border: none;
+  font-size: 16px;
+  background-color: #333333;
+  padding: 15px 50px;
+  color: aqua;
+  border-radius: 5px;
+  box-shadow: 5px -5px 10px -5px aqua;
+}
+
+.cta-button:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLhy79ssZbThnNTmaFDtOeTaDohcx4JCQpKw&usqp=CAU"); */
+  background-image: url("https://st3.depositphotos.com/11351832/34485/v/450/depositphotos_344856368-stock-illustration-circuit-board-technology-background.jpg");
+  padding: 10px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 10px -5px 20px -5px aqua; /* Shadow */
+  margin: 20px 0;
+}
+
+.card-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+  }
+}
+
+.column {
+  flex-direction: column;
+  width: 100%;
+}
+
+.column h2 {
+  font-size: 36px;
+  color: #80eaff;
+}
+
+.column p {
+  font-size: 18px;
+  display: block;
+  width: fit-content;
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
