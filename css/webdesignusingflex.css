@@ -154,16 +154,7 @@ main {
   font-size: 18px;
   display: block;
   width: fit-content;
-  background-image: linear-gradient(
-    to right,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet
-  );
+  background-image: linear-gradient(to right, red, orange, yellow, green);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
